@@ -12,3 +12,11 @@ numCatLives += 1
 numCatLives = "0"
 
 let gameOver: boolean = false
+gameOver = true
+
+// Type Inference
+let tvShow = "Last of Us"
+tvShow = true
+
+let isBleak = true
+isBleak = "abc"
