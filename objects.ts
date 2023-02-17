@@ -40,7 +40,10 @@ type Song = {
   title: string;
   artist: string;
   numStreams: number;
-  credits: { producer: string; writer: string };
+  credits: {
+    producer: string;
+    writer: string
+  };
 };
 
 function calculatePayout(song: Song): number {

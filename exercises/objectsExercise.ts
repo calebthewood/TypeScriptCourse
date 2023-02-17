@@ -41,7 +41,8 @@ const cats: Movie = {
 // It should return the movie's worldwide gross minus its budget
 
 function getProfit(movie: Movie): number {
-  return movie.boxOffice.grossWorldwide - movie.boxOffice.budget;
+  const { grossWorldwide, budget } = movie.boxOffice;
+  return grossWorldwide - budget
 }
 
 // For example...
