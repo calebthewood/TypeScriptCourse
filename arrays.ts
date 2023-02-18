@@ -10,10 +10,10 @@ ageList[0] = 99;
 // const bools: Array<boolean> = []
 const bools: boolean[] = [];
 
-type Point = {
-  x: number;
-  y: number;
-};
+// type Point = {
+//   x: number;
+//   y: number;
+// };
 
 const coords: Point[] = [];
 coords.push({ x: 23, y: 8 });

@@ -12,7 +12,7 @@ let highScore: number | boolean;
 // it can be an array of numbers OR an array of strings
 // it cannot be an array of numbers and strings (mixed together)
 
-let stuff: number[] | string[];
+let stuff: number[] | string[] = [];
 
 // **********************************************
 // ******************* PART 3 *******************
