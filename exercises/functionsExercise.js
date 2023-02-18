@@ -1,3 +1,4 @@
+"use strict";
 // **********************************************
 // ******************* PART 1 *******************
 // **********************************************
@@ -5,11 +6,11 @@
 // It should return a string in the format "one for <name>, one for me"
 // If no name is provided, it should default to "you"
 function twoFer(person) {
-    return "One for ".concat(person, ", one for me");
+    return `One for ${person}, one for me`;
 }
 // twoFer() => "One for you, one for me"
 // twoFer("Elton") => "One for Elton, one for me"
-twoFer("Craig");
+console.log(twoFer("Craig"));
 // **********************************************
 // ******************* PART 2 *******************
 // **********************************************
@@ -17,15 +18,9 @@ twoFer("Craig");
 // isLeapYear(2012) => true
 // isLeapYear(2013) => false
 function isLeapYear(year) {
-    if (year % 4 == 0 && year % 100 !== 100) {
-        return true;
-    }
-    else if (year % 400 == 0) {
-        return true;
-    }
-    return false;
+    return (year % 4 == 0 && year % 100 !== 100) || year % 400 == 0;
 }
-isLeapYear(1998);
+console.log(isLeapYear(1998));
 // To determine whether a year is a leapyear, use this "formula":
 // A YEAR IS A LEAPYEAR IF
 // - year is a multiple of 4 AND not a multiple of 100

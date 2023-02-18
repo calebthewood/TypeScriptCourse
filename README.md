@@ -13,3 +13,12 @@ Check Version (4.9.5 as of 2/16/2023)
 Run a File
 
 ``` $ tsc foobar.ts ```
+
+Run a file in "Watch" mode
+
+``` $ tsc -w foobar.ts ```
+
+Compile all .tsc files in a directory
+
+``` $ tsc ```
+
