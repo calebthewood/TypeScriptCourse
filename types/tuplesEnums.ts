@@ -22,6 +22,7 @@ enum OrderStatus {
   DELIVERED,
   RETURNED,
 }
+
 const myStatus = OrderStatus.DELIVERED;
 
 function isDelivered(status: OrderStatus) {
