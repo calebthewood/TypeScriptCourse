@@ -3,7 +3,8 @@ interface Todo {
   completed: boolean;
 }
 
-const btn = document.getElementById("btn")! as HTMLButtonElement; //Type assertion
+
+const btn = document.getElementById("btn")! as HTMLButtonElement; // Type assertion
 const input = document.getElementById("todoinput")! as HTMLInputElement;
 const form = document.querySelector("form")!;
 const list = document.getElementById("todolist")!;
