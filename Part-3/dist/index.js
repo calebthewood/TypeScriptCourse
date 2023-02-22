@@ -10,19 +10,23 @@ class Player {
     this.last = last;
   }
 
+  static random() {
+    return Math.floor(Math.random() * 11);
+  }
+
   get fullName() {
-    return `${this.first} ${this.last}`
+    return `${this.first} ${this.last}`;
   }
 
   get score() {
-    return this.#score
+    return this.#score;
   }
 
   set score(val) {
     if (val > 0) {
-      this.#score = val
+      this.#score = val;
     } else {
-      throw new Error("Score must be positive")
+      throw new Error("Score must be positive");
     }
   }
 
@@ -30,6 +34,15 @@ class Player {
     console.log("Wololo!");
   }
 }
+
+class Admin extends Player {
+  isAdmin = true;
+  constructor(first, last, powers) {
+    super(first, last);
+    this.powers = powers;
+  }
+}
+const admin = new Admin("Carl", "The Yarl", "pow")
 
 const player1 = new Player("Brian", "Boru");
 
