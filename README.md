@@ -22,3 +22,14 @@ Compile all .tsc files in a directory
 
 ``` $ tsc ```
 
+Initialize tsc (creates tsc config)
+
+``` $ tsc --init```
+
+Initialize npm
+
+``` $ npm init -y ```
+
+Install Lite Server
+
+``` $ npm install lite-server ```
