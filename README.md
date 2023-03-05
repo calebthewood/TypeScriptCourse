@@ -33,3 +33,7 @@ Initialize npm
 Install Lite Server
 
 ``` $ npm install lite-server ```
+
+Install Types Package
+
+``` $ npm install @types/package-name ```
