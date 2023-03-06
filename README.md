@@ -37,3 +37,7 @@ Install Lite Server
 Install Types Package
 
 ``` $ npm install @types/package-name ```
+
+Install Development-Only Packages
+
+``` npm install --save-dev package-name ```
